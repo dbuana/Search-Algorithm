@@ -1,2 +1,50 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Based on the linear search algorithm, this program is the modified version
+# Linear Algorithm; the modified algorithm includes many aspects of efficieny, depending on how people perceive efficiency
+# Extra alternatives, efficiency on finding the value, and extra statements for learning purposes
+from random import randint
+from timeit import repeat
+
+dataArray = [2,4,6,8,10,12,14,16,18,20,22,24,26,28,30] # For challenge purposes, the array will be extra long
+goal = 6
+challengeGoal = [2,8,14] # The challenge
+
+print("Linear Algorithm; modified version")
+# lienar array is function created to find goal, but the machine would not be precise; therefore, an alternative is set
+def linearArray(dataArray, goal):
+	for x in range(len(dataArray)):
+		# A slight validation method
+		# Many alternatives are created to satisfy the needs of finding goal
+		if data[i] == goal:
+			return dataArray, True
+		elif dataArray[i] != goal:
+			return goal + 1
+		elif data[i] == dataArray:
+			return goal, False
+		else: 
+			return goal - 1
+	return True, False
+
+def searchingAccuracy(dataArray, goal):
+	# The main algorithm code
+	low = len(dataArray)
+	high = len(dataArray) + 1
+
+	# Creating the validation statement
+	while low <= high:
+		(low+high)//2
+		if goal == dataArray:
+			print("The result is....")
+			return high, True
+		elif goal <= dataArray:
+			return False
+
+	# Creating an alternative choice for validation
+	while low >= high:
+		return (low-high)//2, False
+
+	if low >= high:
+		print("Your request may not be supported")
+		(low-high)//2
+		return False,  dataArray
+	else:
+		return False, "Request not supported"
